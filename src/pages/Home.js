@@ -12,7 +12,7 @@ const Home = () => {
             <View style={styles.container}>
                 <Image
                     source={Main}
-                    style={[styles.image, { marginHorizontal: isPortrait ? 20 : 40, marginTop: isPortrait ? '20vh' : '30vh' }]}
+                    style={[styles.image, { marginHorizontal: isPortrait ? 25 : 40, marginTop: isPortrait ? '20vh' : '30vh' }]}
                     resizeMode='contain'
                 />
                 <Text style={[styles.title, { marginTop: isPortrait ? 0 : 30 }]}>здесь начинается развитие</Text>
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
         fontWeight: '900',
         fontFamily: 'Manrope',
         marginTop: 30,
-        textAlign: 'center'
+        textAlign: 'center',
+        marginHorizontal: 15
     },
     memberButton: {
         alignSelf: 'center',
