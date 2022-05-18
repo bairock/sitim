@@ -6,7 +6,7 @@ const Network = () => {
 
     return (
         <View style={styles.paddingContainer}>
-            <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }]}>Сеть пространств</Text>
+            <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }, isPortrait ? { margin: 15 } : null]}>Сеть пространств</Text>
             <View style={[styles.spaceContainer, { marginTop: isPortrait ? 0 : 50, paddingBottom: isPortrait ? 0 : 50 }]}>
                 <Text style={styles.spaceTitle}>Тит-Эбя</Text>
                 <ImageBackground source={{ uri: 'https://avatars.mds.yandex.net/get-zen_doc/2468786/pub_5faa47b289ace40d9a4663d3_5faa49013b7ff25f300ca0e1/scale_1200' }} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
