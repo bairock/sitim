@@ -15,7 +15,7 @@ const Home = () => {
                     style={[styles.image, { marginHorizontal: isPortrait ? 25 : 40, marginTop: isPortrait ? '20vh' : '30vh' }]}
                     resizeMode='contain'
                 />
-                <Text style={[styles.title, { marginTop: isPortrait ? 0 : 30 }]}>здесь начинается развитие</Text>
+                <Text style={[styles.title, { marginTop: isPortrait ? 0 : 30, fontSize: isPortrait ? 32: 42 }]}>здесь начинается развитие</Text>
                 <View style={styles.memberButton}>
                     <Text style={styles.memberText}>Открыть пространство</Text>
                 </View>
