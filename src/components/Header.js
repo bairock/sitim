@@ -83,7 +83,8 @@ const styles = StyleSheet.create({
     },
     action: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginLeft: 25
     }
 })
 
