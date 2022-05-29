@@ -70,13 +70,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#ffffff',
         fontWeight: '500',
-        fontFamily: 'Manrope',
+        
     },
     textInfoMenu: {
         fontSize: 14,
         color: '#ffffff',
         fontWeight: '300',
-        fontFamily: 'Manrope',
+        
         opacity: 0.4
     },
     logoContainer: {

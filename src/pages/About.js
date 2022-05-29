@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 60,
         fontWeight: '800',
-        fontFamily: 'Manrope',
         textTransform: 'uppercase',
         marginBottom: 60,
         marginHorizontal: 15
@@ -57,7 +56,6 @@ const styles = StyleSheet.create({
     subtitle: {
         fontSize: 38,
         fontWeight: '700',
-        fontFamily: 'Manrope',
         marginTop: 40,
         textTransform: 'uppercase',
         marginHorizontal: 15
@@ -74,12 +72,12 @@ const styles = StyleSheet.create({
     description: {
         fontSize: 20,
         fontWeight: '500',
-        fontFamily: 'Manrope',
+        
     },
     infoTitle: {
         fontSize: 38,
         fontWeight: '700',
-        fontFamily: 'Manrope',
+        
         marginBottom: 25
     },
     block: {

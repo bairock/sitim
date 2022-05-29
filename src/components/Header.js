@@ -1,5 +1,5 @@
 import { StyleSheet, View, Image, Text } from 'react-native'
-import { FaTelegram } from 'react-icons/fa'
+import { FaTelegram, FaVk } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
@@ -30,10 +30,12 @@ const Header = () => {
                 </Link>
             </View>
             <View style={styles.action}>
-                <FaTelegram size={30} color='#4a0a52' />
-                <View style={styles.button}>
+                <a href='https://vk.com/prostranstvo_sitim'  >
+                    <FaVk size={30} color='#4a0a52' />
+                </a>
+                {/* <View style={styles.button}>
                     <Text style={styles.buttonText}>Подписаться</Text>
-                </View>
+                </View> */}
             </View>
         </View>
     )
@@ -63,7 +65,6 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#16061c',
         fontWeight: '600',
-        fontFamily: 'Manrope',
     },
     button: {
         alignSelf: 'center',
@@ -78,7 +79,6 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#000',
         fontWeight: '700',
-        fontFamily: 'Manrope',
         fontSize: 14
     },
     action: {

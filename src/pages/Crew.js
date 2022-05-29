@@ -87,7 +87,6 @@ const styles = StyleSheet.create({
     title: {
         color: '#fff',
         fontWeight: '700',
-        fontFamily: 'Manrope',
         fontSize: 60,
         paddingTop: 4,
         paddingBottom: 14
@@ -95,7 +94,6 @@ const styles = StyleSheet.create({
     subtitle: {
         color: '#fff',
         fontWeight: '500',
-        fontFamily: 'Manrope',
         fontSize: 18,
         maxWidth: 1000
     },
@@ -123,7 +121,6 @@ const styles = StyleSheet.create({
     cardTitle: {
         color: '#000',
         fontWeight: '600',
-        fontFamily: 'Manrope',
         fontSize: 16,
     },
     titleCardContainer: {
@@ -133,7 +130,6 @@ const styles = StyleSheet.create({
     cardSubtitle: {
         color: '#000',
         fontWeight: '300',
-        fontFamily: 'Manrope',
         fontSize: 14,
         marginTop: 8
     }

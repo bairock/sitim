@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 60,
         fontWeight: '800',
-        fontFamily: 'Manrope',
         textTransform: 'uppercase',
         marginBottom: 60
     },
@@ -84,16 +83,14 @@ const styles = StyleSheet.create({
     spaceTitle: {
         fontSize: 38,
         fontWeight: '700',
-        fontFamily: 'Manrope',
         textTransform: 'uppercase',
         marginBottom: 25,
-        width: 280,
+        width: 300,
         margin: 15
     },
     spaceDescription: {
         fontSize: 20,
         fontWeight: '500',
-        fontFamily: 'Manrope',
         margin: 15
     },
     soon: {
@@ -110,7 +107,6 @@ const styles = StyleSheet.create({
     soonText: {
         fontSize: 17,
         fontWeight: '500',
-        fontFamily: 'Manrope',
         lineHeight: 0,
         color: '#fff'
     },

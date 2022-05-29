@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
-import Metodic from '../assets/metodic.pdf'
+import howToOpenSpace from '../assets/howToOpenSpace.pdf'
 
 const Open = () => {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })
@@ -56,7 +56,7 @@ const Open = () => {
                     <Text style={styles.description}>Подготовка к мероприятию открытие пространства развития «Ситим»</Text>
                 </View>
             </View>
-            <TouchableOpacity accessibilityRole='link' href={Metodic} download='Metodic' style={styles.button}>
+            <TouchableOpacity accessibilityRole='link' href={howToOpenSpace} download='howToOpenSpace' style={styles.button}>
                 <Text style={styles.buttonText}>Подробнее</Text>
             </TouchableOpacity>
         </View>
@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 60,
         fontWeight: '800',
-        fontFamily: 'Manrope',
         textTransform: 'uppercase',
         marginBottom: 60,
     },
@@ -81,7 +80,6 @@ const styles = StyleSheet.create({
     subtitle: {
         fontSize: 38,
         fontWeight: '700',
-        fontFamily: 'Manrope',
         marginTop: 40,
         textTransform: 'uppercase'
     },
@@ -93,12 +91,10 @@ const styles = StyleSheet.create({
     description: {
         fontSize: 20,
         fontWeight: '500',
-        fontFamily: 'Manrope',
     },
     numberTitle: {
         fontSize: 38,
         fontWeight: '700',
-        fontFamily: 'Manrope',
         color: '#4a0a52',
         marginBottom: 30
     },
@@ -125,7 +121,6 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#fff',
         fontWeight: '700',
-        fontFamily: 'Manrope',
         fontSize: 16
     }
 })
