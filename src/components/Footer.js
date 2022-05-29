@@ -70,13 +70,11 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#ffffff',
         fontWeight: '500',
-        
     },
     textInfoMenu: {
         fontSize: 14,
         color: '#ffffff',
         fontWeight: '300',
-        
         opacity: 0.4
     },
     logoContainer: {

@@ -72,12 +72,10 @@ const styles = StyleSheet.create({
     description: {
         fontSize: 20,
         fontWeight: '500',
-        
     },
     infoTitle: {
         fontSize: 38,
         fontWeight: '700',
-        
         marginBottom: 25
     },
     block: {

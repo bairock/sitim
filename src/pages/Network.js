@@ -1,5 +1,11 @@
 import { StyleSheet, View, Text, ImageBackground } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
+import BackdropFilter from "react-backdrop-filter"
+
+const titEbe = require('../assets/titEbe.jpg')
+const titEbeTwo = require('../assets/titEbeTwo.jpg')
+const titEbeThree = require('../assets/titEbeThree.jpg')
+const titEbeFour = require('../assets/titEbeFour.jpg')
 
 const Network = () => {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })
@@ -9,8 +15,7 @@ const Network = () => {
             <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }, isPortrait ? { margin: 15 } : null]}>Сеть пространств</Text>
             <View style={[styles.spaceContainer, { marginTop: isPortrait ? 0 : 50, paddingBottom: isPortrait ? 0 : 50 }]}>
                 <Text style={styles.spaceTitle}>Тит-Эбя</Text>
-                <ImageBackground source={{ uri: 'https://avatars.mds.yandex.net/get-zen_doc/2468786/pub_5faa47b289ace40d9a4663d3_5faa49013b7ff25f300ca0e1/scale_1200' }} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-
+                <ImageBackground source={titEbe} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
@@ -18,7 +23,8 @@ const Network = () => {
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Бердигестях</Text>
-                <ImageBackground source={{ uri: 'https://businesstraveller.com.ru/upload/resize_cache/iblock/61b/660_999999988_1/61b21c09aa79d5f224999877555db91c.jpg' }} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
+                <ImageBackground source={titEbeTwo} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
+                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} />
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
@@ -26,10 +32,12 @@ const Network = () => {
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Магарас</Text>
-                <ImageBackground source={{ uri: 'https://coworkingtop.ru/wp-content/uploads/2018/11/top6-1024x570.jpg' }} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <View style={styles.soon}>
-                        <Text style={styles.soonText}>скоро открытие</Text>
-                    </View>
+                <ImageBackground source={titEbeThree} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
+                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} >
+                        <View style={styles.soon}>
+                            <Text style={styles.soonText}>скоро открытие</Text>
+                        </View>
+                    </BackdropFilter>
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
@@ -37,10 +45,12 @@ const Network = () => {
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Эльгэйи</Text>
-                <ImageBackground source={{ uri: 'https://hsto.org/webt/59/ed/ad/59edad44f1671716737664.jpeg' }} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <View style={styles.soon}>
-                        <Text style={styles.soonText}>скоро открытие</Text>
-                    </View>
+                <ImageBackground source={titEbeFour} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
+                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} >
+                        <View style={styles.soon}>
+                            <Text style={styles.soonText}>скоро открытие</Text>
+                        </View>
+                    </BackdropFilter>
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
@@ -95,14 +105,15 @@ const styles = StyleSheet.create({
     },
     soon: {
         backgroundColor: '#ff6501',
-        alignSelf: 'flex-end',
+        top: 15,
+        position: 'absolute',
+        right: 15,
         height: 30,
+        width: 180,
         paddingHorizontal: 15,
         borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 15,
-        marginHorizontal: 15
     },
     soonText: {
         fontSize: 17,
