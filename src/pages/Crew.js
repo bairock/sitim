@@ -60,7 +60,7 @@ const Crew = () => {
                             </View>
                         ))
                     }
-                     {
+                    {
                         isPortrait ? null : <View style={{ width: 260, height: 410 }} />
                     }
                     {
