@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         margin: 15
     },
     soon: {
-        backgroundColor: '#ff6501',
+        backgroundColor: '#FF932B',
         top: 15,
         position: 'absolute',
         right: 15,

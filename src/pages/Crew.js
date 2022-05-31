@@ -8,11 +8,6 @@ const crew = [
         url: require('../assets/ivanStepanov.jpg')
     },
     {
-        title: 'Дмитриев Семен',
-        subtitle: 'Digital & media менеджер',
-        url: require('../assets/semenDmitriev.jpg')
-    },
-    {
         title: 'Стручков Ньургун',
         subtitle: 'Заместитель директора',
         url: require('../assets/struchkovNurgun.jpg')
@@ -23,14 +18,14 @@ const crew = [
         url: require('../assets/dmitrievaAnastasiya.jpg')
     },
     {
-        title: 'Егорова Сандаара',
-        subtitle: 'Проектный менеджер',
-        url: require('../assets/egorovaSandara.jpg')
-    },
-    {
         title: 'Ноговицина Айталина',
         subtitle: 'Куратор и наставник проектов',
         url: require('../assets/nogovicenaAyta.jpg')
+    },
+    {
+        title: 'Дмитриев Семен',
+        subtitle: 'Digital & media менеджер',
+        url: require('../assets/semenDmitriev.jpg')
     },
     {
         title: 'Ноговицина Любовь',
