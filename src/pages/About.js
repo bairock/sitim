@@ -14,24 +14,24 @@ const About = () => {
             <View style={[styles.paddingContainer, { maxWidth: isPortrait ? width : 1200 }]}>
                 <View style={[styles.infoContainer, { flexDirection: isPortrait ? 'column' : 'row', marginTop: isPortrait ? 0 : 80 }]}>
                     <View style={styles.block}>
-                        <Text style={styles.infoTitle}>INDEPENDENT</Text>
+                        <Text style={styles.infoTitle}>НЕЙТРАЛЬНОСТЬ</Text>
                         <Text style={styles.description}>Независимая онлайн и оффлайн площадка для повышения социальной активности местного населения и побуждения к преобразованию села.</Text>
                     </View>
                     {isPortrait ? null : <View style={styles.verticalLine} />}
                     <View style={styles.block}>
-                        <Text style={styles.infoTitle}>NOVATOR</Text>
+                        <Text style={styles.infoTitle}>НОВАТОРСТВО</Text>
                         <Text style={styles.description}>Проектная площадка для инициации новых идей и предложений.</Text>
                     </View>
                 </View>
                 {isPortrait ? null : <View style={styles.horizontalLine} />}
                 <View style={[styles.infoContainer, { flexDirection: isPortrait ? 'column' : 'row', marginTop: isPortrait ? 0 : 80 }]}>
                     <View style={styles.block}>
-                        <Text style={styles.infoTitle}>COMMUNITY</Text>
+                        <Text style={styles.infoTitle}>СООБЩЕСТВО</Text>
                         <Text style={styles.description}>Место для формирования местных сообществ и консолидации жителей.</Text>
                     </View>
                     {isPortrait ? null : <View style={styles.verticalLine} />}
                     <View style={styles.block}>
-                        <Text style={styles.infoTitle}>COMFORT</Text>
+                        <Text style={styles.infoTitle}>КОМФОРТ</Text>
                         <Text style={styles.description}>Удобное комфортное современное пространство для организации проектно- ориентированных, образовательных и просветительских мероприятий.</Text>
                     </View>
                 </View>
