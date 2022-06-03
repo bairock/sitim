@@ -4,11 +4,11 @@ import { HiOutlineDocumentText } from 'react-icons/hi'
 
 const docs = [
     {
-        name: 'КАК СОЗДАТЬ ПРОСТРАНСТВО РАЗВИТИЯ «СИТИМ»',
-        file: require('../assets/howToOpenSpace.pdf')
+        name: 'Методические рекомендации «Как открыть пространство развития «Ситим»',
+        file: require('../assets/saydii.pdf')
     },
     {
-        name: 'презентация о сети пространств развития',
+        name: 'Презентация о сети пространств развития «Ситим»',
         file: require('../assets/present.pdf')
     }
 ]

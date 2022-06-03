@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive'
 import BackdropFilter from 'react-backdrop-filter'
 
 const titEbe = require('../assets/titEbe.jpg')
-const titEbeTwo = require('../assets/titEbeTwo.jpg')
+const berdi = require('../assets/berdi.jpg')
 const titEbeThree = require('../assets/titEbeThree.jpg')
 const titEbeFour = require('../assets/titEbeFour.jpg')
 
@@ -20,8 +20,7 @@ const Network = () => {
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Бердигестях</Text>
-                <ImageBackground source={titEbeTwo} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} />
+                <ImageBackground source={berdi} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
                 </ImageBackground>
             </View>
             <View style={styles.spaceContainer}>
