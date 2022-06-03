@@ -2,7 +2,7 @@ import { StyleSheet, View, Image, Text, useWindowDimensions } from 'react-native
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
-import Main from '../assets/main_white.svg'
+import Main from '../assets/sitimWhite.svg'
 
 const Footer = () => {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })

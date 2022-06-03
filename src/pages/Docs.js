@@ -18,7 +18,7 @@ const Docs = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }, isPortrait ? { marginHorizontal: 15 } : null]}>Документы</Text>
+            <Text style={[styles.title, isPortrait ? { marginHorizontal: 15 } : null]}>Документы</Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: isPortrait ? 'center' : 'flex-start' }}>
                 {
                     docs.map((item) => (
@@ -37,7 +37,7 @@ const Docs = () => {
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 60,
+        fontSize: 34,
         fontWeight: '800',
         textTransform: 'uppercase',
         marginBottom: 60,

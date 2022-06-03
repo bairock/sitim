@@ -8,8 +8,8 @@ const About = () => {
     return (
         <View style={styles.container}>
             <View style={[styles.paddingContainer, { maxWidth: isPortrait ? width : 1200 }]}>
-                <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }]}>О пространстве</Text>
-                <Text style={[styles.subtitle, { fontSize: isPortrait ? 30 : 38, marginBottom: isPortrait ? 60 : 0 }]}>Пространство коллективной работы "Sitim" это:</Text>
+                <Text style={styles.title}>О пространстве</Text>
+                <Text style={[styles.subtitle, { marginBottom: isPortrait ? 60 : 0 }]}>Пространство коллективной работы "Ситим" это:</Text>
             </View>
             <View style={[styles.paddingContainer, { maxWidth: isPortrait ? width : 1200 }]}>
                 <View style={[styles.infoContainer, { flexDirection: isPortrait ? 'column' : 'row', marginTop: isPortrait ? 0 : 80 }]}>
@@ -47,14 +47,14 @@ const styles = StyleSheet.create({
         marginBottom: 50
     },
     title: {
-        fontSize: 60,
+        fontSize: 34,
         fontWeight: '800',
         textTransform: 'uppercase',
         marginBottom: 60,
         marginHorizontal: 15
     },
     subtitle: {
-        fontSize: 38,
+        fontSize: 30,
         fontWeight: '700',
         marginTop: 40,
         textTransform: 'uppercase',
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     infoTitle: {
-        fontSize: 38,
+        fontSize: 28,
         fontWeight: '700',
         marginBottom: 25
     },

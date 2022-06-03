@@ -3,7 +3,7 @@ import { FaVk } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/mesto.svg'
 
 const Header = () => {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
     },
     icon: {
         height: 50,
-        width: 35
+        width: 35,
+        marginRight: 25
     },
     containerMenu: {
         flexDirection: 'row'

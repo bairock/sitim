@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, Text } from 'react-native'
+import { StyleSheet, View, Image, Text, FlatList } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
 
 const crew = [
@@ -43,30 +43,28 @@ const Crew = () => {
         <View>
             <View style={styles.titleContainer}>
                 <View style={styles.marginLayout}>
-                    <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }]}>Команда развития сети </Text>
+                    <Text style={styles.title}>Команда развития сети </Text>
                     <Text style={styles.subtitle}>Проект «Сеть пространств развития «Ситим» в муниципальных образованиях Республики Саха (Якутия)» разработан и реализуется командой Автономной некоммерческой организацией по развитию стратегических инициатив «Индустрия будущего» при участии заинтересованных организаций.</Text>
                 </View>
             </View>
-            <View style={styles.teamContainer}>
-                <View style={[styles.marginLayout, { flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap' }]}>
-                    {
-                        crew.map(({ title, subtitle, url }, index) => (
-                            <View key={index} style={styles.cardContainer}>
-                                <Image style={styles.cardImage} source={{ uri: url }} />
-                                <View style={styles.titleCardContainer}>
-                                    <Text style={styles.cardTitle}>{title}</Text>
-                                    <Text style={styles.cardSubtitle}>{subtitle}</Text>
-                                </View>
+            <View style={[styles.teamContainer, styles.marginLayout]}>
+                <FlatList
+                    data={crew}
+                    numColumns={3}
+                    columnWrapperStyle={{
+                        justifyContent: 'space-evenly',
+                        flexWrap: 'wrap'
+                    }}
+                    renderItem={({ item }) => (
+                        <View style={styles.cardContainer}>
+                            <Image style={styles.cardImage} source={{ uri: item.url }} />
+                            <View style={styles.titleCardContainer}>
+                                <Text style={styles.cardTitle}>{item.title}</Text>
+                                <Text style={styles.cardSubtitle}>{item.subtitle}</Text>
                             </View>
-                        ))
-                    }
-                    {
-                        isPortrait ? null : <View style={{ width: 260, height: 410 }} />
-                    }
-                    {
-                        isPortrait ? null : <View style={{ width: 260, height: 410 }} />
-                    }
-                </View>
+                        </View>
+                    )}
+                />
             </View>
         </View>
     )
@@ -85,7 +83,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#fff',
         fontWeight: '700',
-        fontSize: 60,
+        fontSize: 34,
         paddingTop: 4,
         paddingBottom: 14
     },
@@ -100,18 +98,16 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     teamContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
         marginTop: 50,
-        paddingHorizontal: 40
+        alignSelf: 'center',
     },
     cardContainer: {
         width: 260,
-        height: 410,
         backgroundColor: '#ffffff',
         borderRadius: 15,
         overflow: 'hidden',
-        marginBottom: 50
+        marginBottom: 50,
+        marginHorizontal: 25
     },
     cardImage: {
         height: 260,

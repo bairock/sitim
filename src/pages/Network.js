@@ -12,7 +12,7 @@ const Network = () => {
 
     return (
         <View style={styles.paddingContainer}>
-            <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }, isPortrait ? { margin: 15 } : null]}>Сеть пространств</Text>
+            <Text style={[styles.title, isPortrait ? { margin: 15 } : null]}>Сеть пространств</Text>
             <View style={[styles.spaceContainer, { marginTop: isPortrait ? 0 : 50, paddingBottom: isPortrait ? 0 : 50 }]}>
                 <Text style={styles.spaceTitle}>Тит-Эбя</Text>
                 <ImageBackground source={titEbe} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
@@ -28,7 +28,7 @@ const Network = () => {
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
-                        Пространство коллективной работы «Сайдыы Бердигестях» это площадка под проведение мероприятий и проектной деятельности для взаимодействия государственных органов, органов местного самоуправления, предпринимателей, фермеров, некоммерческих организаций и активных жителей села.
+                        Пространство коллективной работы «Ситим Бердигестях» это площадка под проведение мероприятий и проектной деятельности для взаимодействия государственных органов, органов местного самоуправления, предпринимателей, фермеров, некоммерческих организаций и активных жителей села.
                     </Text>
                 </View>
             </View>
@@ -56,7 +56,7 @@ const Network = () => {
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
-                        Пространство коллективной работы «Сайдыы Эльгяй» это место где собираются единомышленники, которые реализуют проекты для повышения уровня активности населения в развитии села и создания механизма новых сообществ, обладающих проектным мышлением для  реализации современных проектов и улучшения качества жизни в сельской местности.
+                        Пространство коллективной работы «Ситим Эльгяй» это место где собираются единомышленники, которые реализуют проекты для повышения уровня активности населения в развитии села и создания механизма новых сообществ, обладающих проектным мышлением для  реализации современных проектов и улучшения качества жизни в сельской местности.
                     </Text>
                 </View>
             </View>
@@ -66,7 +66,7 @@ const Network = () => {
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 60,
+        fontSize: 34,
         fontWeight: '800',
         textTransform: 'uppercase',
         marginBottom: 60
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         height: 315
     },
     spaceTitle: {
-        fontSize: 38,
+        fontSize: 30,
         fontWeight: '700',
         textTransform: 'uppercase',
         marginBottom: 25,

@@ -2,7 +2,7 @@ import { StyleSheet, View, Image, Text } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 
-import Main from '../assets/main.svg'
+import Main from '../assets/sitim.svg'
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
                     style={[styles.image, { marginHorizontal: isPortrait ? 25 : 40, marginTop: isPortrait ? '20vh' : '30vh' }]}
                     resizeMode='contain'
                 />
-                <Text style={[styles.title, { marginTop: isPortrait ? 0 : 30, fontSize: isPortrait ? 32 : 42 }]}>здесь начинается развитие территорий</Text>
+                {/* <Text style={[styles.title, { marginTop: isPortrait ? 0 : 30, fontSize: isPortrait ? 32 : 42 }]}>здесь начинается развитие территорий</Text> */}
                 <Link onClick={() => window.scrollTo(0, 0)} style={{ alignSelf: 'center' }} to='/open'>
                     <View style={styles.memberButton}>
                         <Text style={styles.memberText}>Открыть пространство</Text>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#4a0a52',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 40,
+        marginTop: 100,
         paddingHorizontal: 25
     },
     memberText: {

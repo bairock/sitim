@@ -7,8 +7,8 @@ const Open = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={[styles.title, { fontSize: isPortrait ? 34 : 60 }, isPortrait ? { margin: 15 } : null]}>Как открыть пространство</Text>
-            <Text style={[styles.subtitle, { fontSize: isPortrait ? 24 : 38 }, isPortrait ? { margin: 15 } : null]}>Заинтересованные команды должны пройти акселерационный (ускоренный) образовательный курс, в целях подготовки и проработки организационных вопросов по открытию пространства.</Text>
+            <Text style={[styles.title, isPortrait ? { margin: 15 } : null]}>Как открыть пространство</Text>
+            <Text style={[styles.subtitle, isPortrait ? { margin: 15 } : null]}>Заинтересованные команды должны пройти акселерационный (ускоренный) образовательный курс, в целях подготовки и проработки организационных вопросов по открытию пространства.</Text>
             <View style={[styles.infoContainer, { flexDirection: isPortrait ? 'column' : 'row' }, isPortrait ? { margin: 0 } : null]}>
                 <View style={[styles.block, isPortrait ? { margin: 15 } : null]}>
                     <Text style={styles.numberTitle}>1 ЭТАП</Text>
@@ -65,7 +65,7 @@ const Open = () => {
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 60,
+        fontSize: 34,
         fontWeight: '800',
         textTransform: 'uppercase',
         marginBottom: 60,
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         marginBottom: 50
     },
     subtitle: {
-        fontSize: 38,
+        fontSize: 24,
         fontWeight: '700',
         marginTop: 40,
         textTransform: 'uppercase'
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     numberTitle: {
-        fontSize: 38,
+        fontSize: 30,
         fontWeight: '700',
         color: '#4a0a52',
         marginBottom: 30
