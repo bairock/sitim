@@ -8,10 +8,6 @@ const docs = [
         file: require('../assets/howToOpenSpace.pdf')
     },
     {
-        name: 'презентация с.Эльгяй',
-        file: require('../assets/elgei.pptx')
-    },
-    {
         name: 'презентация о сети пространств развития',
         file: require('../assets/present.pdf')
     }
