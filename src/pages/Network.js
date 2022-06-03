@@ -26,9 +26,11 @@ const Network = () => {
                 <ImageBackground source={titEbeTwo} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
                     <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} />
                 </ImageBackground>
-                {/* <View style={styles.spaceBlock}>
-                    <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
-                </View> */}
+                <View style={styles.spaceBlock}>
+                    <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
+                        Пространство коллективной работы «Сайдыы Бердигестях» это площадка под проведение мероприятий и проектной деятельности для взаимодействия государственных органов, органов местного самоуправления, предпринимателей, фермеров, некоммерческих организаций и активных жителей села.
+                    </Text>
+                </View>
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Магарас</Text>
@@ -52,9 +54,11 @@ const Network = () => {
                         </View>
                     </BackdropFilter>
                 </ImageBackground>
-                {/* <View style={styles.spaceBlock}>
-                    <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
-                </View> */}
+                <View style={styles.spaceBlock}>
+                    <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
+                        Пространство коллективной работы «Сайдыы Эльгяй» это место где собираются единомышленники, которые реализуют проекты для повышения уровня активности населения в развитии села и создания механизма новых сообществ, обладающих проектным мышлением для  реализации современных проектов и улучшения качества жизни в сельской местности.
+                    </Text>
+                </View>
             </View>
         </View>
     )
@@ -88,7 +92,7 @@ const styles = StyleSheet.create({
     },
     spaceBlock: {
         width: 360,
-        height: 300
+        height: 315
     },
     spaceTitle: {
         fontSize: 38,
@@ -101,7 +105,6 @@ const styles = StyleSheet.create({
     spaceDescription: {
         fontSize: 20,
         fontWeight: '500',
-        margin: 15
     },
     soon: {
         backgroundColor: '#FF932B',
