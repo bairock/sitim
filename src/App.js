@@ -7,6 +7,7 @@ import Crew from './pages/Crew'
 import About from './pages/About'
 import Open from './pages/Open'
 import Network from './pages/Network'
+import Docs from './pages/Docs'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='crew' element={<Crew />} />
         <Route path='open' element={<Open />} />
         <Route path='network' element={<Network />} />
+        <Route path='docs' element={<Docs />} />
       </Routes>
       <Footer />
     </View>

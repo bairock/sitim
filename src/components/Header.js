@@ -1,5 +1,5 @@
 import { StyleSheet, View, Image, Text } from 'react-native'
-import { FaTelegram, FaVk } from 'react-icons/fa'
+import { FaVk } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
@@ -24,6 +24,9 @@ const Header = () => {
                 </Link>
                 <Link onClick={() => window.scrollTo(0, 0)} to='/crew'>
                     <Text style={styles.textMenu}>Команда развития сети</Text>
+                </Link>
+                <Link onClick={() => window.scrollTo(0, 0)} to='/docs'>
+                    <Text style={styles.textMenu}>Документы</Text>
                 </Link>
                 <Link onClick={() => window.scrollTo(0, document.body.scrollHeight)} to='/'  >
                     <Text style={styles.textMenu}>Контакты</Text>

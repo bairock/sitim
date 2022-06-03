@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, ImageBackground } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
-import BackdropFilter from "react-backdrop-filter"
+import BackdropFilter from 'react-backdrop-filter'
 
 const titEbe = require('../assets/titEbe.jpg')
 const titEbeTwo = require('../assets/titEbeTwo.jpg')
@@ -24,7 +24,7 @@ const Network = () => {
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Бердигестях</Text>
                 <ImageBackground source={titEbeTwo} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} />
+                    <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} />
                 </ImageBackground>
                 <View style={styles.spaceBlock}>
                     <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
@@ -33,7 +33,7 @@ const Network = () => {
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Магарас</Text>
                 <ImageBackground source={titEbeThree} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} >
+                    <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} >
                         <View style={styles.soon}>
                             <Text style={styles.soonText}>скоро открытие</Text>
                         </View>
@@ -46,7 +46,7 @@ const Network = () => {
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Эльгэйи</Text>
                 <ImageBackground source={titEbeFour} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
-                    <BackdropFilter className='blur' filter={"blur(6px) sepia(55%)"} >
+                    <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} >
                         <View style={styles.soon}>
                             <Text style={styles.soonText}>скоро открытие</Text>
                         </View>
