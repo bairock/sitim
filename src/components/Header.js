@@ -3,7 +3,7 @@ import { FaVk } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
-import Logo from '../assets/mesto.svg'
+import Logo from '../assets/sitim.png'
 
 const Header = () => {
     const isPortrait = useMediaQuery({ orientation: 'portrait' })

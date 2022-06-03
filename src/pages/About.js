@@ -9,7 +9,7 @@ const About = () => {
         <View style={styles.container}>
             <View style={[styles.paddingContainer, { maxWidth: isPortrait ? width : 1200 }]}>
                 <Text style={styles.title}>О пространстве</Text>
-                <Text style={[styles.subtitle, { marginBottom: isPortrait ? 60 : 0 }]}>Пространство коллективной работы "Ситим" это:</Text>
+                <Text style={[styles.subtitle, { marginBottom: isPortrait ? 60 : 0 }]}>Пространство развития "Ситим" это:</Text>
             </View>
             <View style={[styles.paddingContainer, { maxWidth: isPortrait ? width : 1200 }]}>
                 <View style={[styles.infoContainer, { flexDirection: isPortrait ? 'column' : 'row', marginTop: isPortrait ? 0 : 80 }]}>

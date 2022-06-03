@@ -17,20 +17,12 @@ const Network = () => {
                 <Text style={styles.spaceTitle}>Тит-Эбя</Text>
                 <ImageBackground source={titEbe} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
                 </ImageBackground>
-                {/* <View style={styles.spaceBlock}>
-                    <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
-                </View> */}
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Бердигестях</Text>
                 <ImageBackground source={titEbeTwo} style={[styles.spaceBlock, { width: isPortrait ? '100%' : 360 }]}>
                     <BackdropFilter className='blur' filter={'blur(6px) sepia(55%)'} />
                 </ImageBackground>
-                <View style={styles.spaceBlock}>
-                    <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
-                        Пространство коллективной работы «Ситим Бердигестях» это площадка под проведение мероприятий и проектной деятельности для взаимодействия государственных органов, органов местного самоуправления, предпринимателей, фермеров, некоммерческих организаций и активных жителей села.
-                    </Text>
-                </View>
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Магарас</Text>
@@ -41,9 +33,6 @@ const Network = () => {
                         </View>
                     </BackdropFilter>
                 </ImageBackground>
-                {/* <View style={styles.spaceBlock}>
-                    <Text style={styles.spaceDescription}>Это свободное офисное пространство, в котором можно арендовать рабочее место или переговорную комнату. Существенное отличие от офиса в том, что здесь собираются люди из разных компаний, не зависящие друг от друга по рабочим вопросам.</Text>
-                </View> */}
             </View>
             <View style={styles.spaceContainer}>
                 <Text style={styles.spaceTitle}>Эльгэйи</Text>
@@ -54,11 +43,6 @@ const Network = () => {
                         </View>
                     </BackdropFilter>
                 </ImageBackground>
-                <View style={styles.spaceBlock}>
-                    <Text style={[styles.spaceDescription, isPortrait ? { margin: 15 } : null]}>
-                        Пространство коллективной работы «Ситим Эльгяй» это место где собираются единомышленники, которые реализуют проекты для повышения уровня активности населения в развитии села и создания механизма новых сообществ, обладающих проектным мышлением для  реализации современных проектов и улучшения качества жизни в сельской местности.
-                    </Text>
-                </View>
             </View>
         </View>
     )
