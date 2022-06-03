@@ -39,7 +39,7 @@ const Footer = () => {
                             <Text style={styles.textInfoMenu}>Контактный телефон</Text>
                         </View>
                         <View style={{ marginBottom: 15 }}>
-                            <Text style={styles.textMenu}>saydyy2020@gmail.com</Text>
+                            <Text style={styles.textMenu}>anofutureindustry@gmail.com</Text>
                             <Text style={styles.textInfoMenu}>Электронная почта</Text>
                         </View>
                         <View style={{ marginBottom: 15 }}>
