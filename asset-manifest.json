@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.17d0a485.css",
-    "main.js": "/static/js/main.87076094.js",
-    "static/media/saydii.pdf": "/static/media/saydii.4555970b9138d0477918.pdf",
-    "static/media/nogovicenaLove.jpg": "/static/media/nogovicenaLove.7035dbbde3ed65fc33b4.jpg",
-    "static/media/present.pdf": "/static/media/present.e31675c328e956e0d645.pdf",
-    "static/media/nogovicenaAyta.jpg": "/static/media/nogovicenaAyta.e0f8b48e6fba05289a0c.jpg",
-    "static/media/struchkovNurgun.jpg": "/static/media/struchkovNurgun.a763680d563d70c284aa.jpg",
-    "static/media/ivanStepanov.jpg": "/static/media/ivanStepanov.7080d1657a3e173fca02.jpg",
-    "static/media/semenDmitriev.jpg": "/static/media/semenDmitriev.9065b9e9bd240ecc3e8f.jpg",
-    "static/media/howToOpenSpace.pdf": "/static/media/howToOpenSpace.3eadf576572aeb37435c.pdf",
-    "static/media/titEbeFour.jpg": "/static/media/titEbeFour.6dacb682a577f8bb1657.jpg",
-    "static/media/titEbe.jpg": "/static/media/titEbe.172307c103836e4640ec.jpg",
-    "static/media/titEbeThree.jpg": "/static/media/titEbeThree.922f5966b6bd8e531b73.jpg",
-    "static/media/berdi.jpg": "/static/media/berdi.dc70113918c0f2c1ff38.jpg",
-    "static/media/dmitrievaAnastasiya.jpg": "/static/media/dmitrievaAnastasiya.51b0c51fa2ef55984d9d.jpg",
-    "static/media/sitim.svg": "/static/media/sitim.0c44aea5111ea58f0bd9d31e3f28dfc7.svg",
-    "static/media/sitimWhite.svg": "/static/media/sitimWhite.e07d08396b5f4c4524498bdb72cf1580.svg",
-    "index.html": "/index.html",
-    "main.17d0a485.css.map": "/static/css/main.17d0a485.css.map",
-    "main.87076094.js.map": "/static/js/main.87076094.js.map"
+    "main.css": "/sitim/static/css/main.17d0a485.css",
+    "main.js": "/sitim/static/js/main.c04dc9f7.js",
+    "static/media/saydii.pdf": "/sitim/static/media/saydii.4555970b9138d0477918.pdf",
+    "static/media/nogovicenaLove.jpg": "/sitim/static/media/nogovicenaLove.7035dbbde3ed65fc33b4.jpg",
+    "static/media/present.pdf": "/sitim/static/media/present.e31675c328e956e0d645.pdf",
+    "static/media/nogovicenaAyta.jpg": "/sitim/static/media/nogovicenaAyta.e0f8b48e6fba05289a0c.jpg",
+    "static/media/struchkovNurgun.jpg": "/sitim/static/media/struchkovNurgun.a763680d563d70c284aa.jpg",
+    "static/media/ivanStepanov.jpg": "/sitim/static/media/ivanStepanov.7080d1657a3e173fca02.jpg",
+    "static/media/semenDmitriev.jpg": "/sitim/static/media/semenDmitriev.9065b9e9bd240ecc3e8f.jpg",
+    "static/media/howToOpenSpace.pdf": "/sitim/static/media/howToOpenSpace.3eadf576572aeb37435c.pdf",
+    "static/media/titEbeFour.jpg": "/sitim/static/media/titEbeFour.6dacb682a577f8bb1657.jpg",
+    "static/media/titEbe.jpg": "/sitim/static/media/titEbe.172307c103836e4640ec.jpg",
+    "static/media/titEbeThree.jpg": "/sitim/static/media/titEbeThree.922f5966b6bd8e531b73.jpg",
+    "static/media/berdi.jpg": "/sitim/static/media/berdi.dc70113918c0f2c1ff38.jpg",
+    "static/media/dmitrievaAnastasiya.jpg": "/sitim/static/media/dmitrievaAnastasiya.51b0c51fa2ef55984d9d.jpg",
+    "static/media/sitim.svg": "/sitim/static/media/sitim.0c44aea5111ea58f0bd9d31e3f28dfc7.svg",
+    "static/media/sitimWhite.svg": "/sitim/static/media/sitimWhite.e07d08396b5f4c4524498bdb72cf1580.svg",
+    "index.html": "/sitim/index.html",
+    "main.17d0a485.css.map": "/sitim/static/css/main.17d0a485.css.map",
+    "main.c04dc9f7.js.map": "/sitim/static/js/main.c04dc9f7.js.map"
   },
   "entrypoints": [
     "static/css/main.17d0a485.css",
-    "static/js/main.87076094.js"
+    "static/js/main.c04dc9f7.js"
   ]
 }
