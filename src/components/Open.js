@@ -28,7 +28,7 @@ const Open = ({ open }) => {
                     <Text style={styles.text}>Заинтересованные команды должны пройти акселерационный (ускоренный) образовательный курс, в целях подготовки и проработки организауионных вопросов по открыию пространства.</Text>
                     {
                         items.map((object, index) => (
-                            <View style={styles.itemContainer}>
+                            <View key={index} style={styles.itemContainer}>
                                 <View style={styles.circle}>
                                     <Text style={styles.indexText}>{index + 1}</Text>
                                 </View>

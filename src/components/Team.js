@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
     title: {
         fontWeight: '500',
         fontSize: 36,
-        color: '#1F0425'
+        color: '#1F0425',
+        textAlign: 'center'
     },
     subtitleContainer: {
         justifyContent: 'center',
