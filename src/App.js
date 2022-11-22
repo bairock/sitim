@@ -37,7 +37,6 @@ const App = () => {
     }
   }
 
-
   return (
     <View>
       <Header onScrollTo={onScrollTo} />
