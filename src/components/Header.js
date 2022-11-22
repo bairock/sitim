@@ -1,44 +1,36 @@
-import { StyleSheet, View, Image, Text } from 'react-native'
-import { FaVk } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
+import logo from '../assets/logo.svg'
+import documents from '../assets/docs.zip'
 
-import Logo from '../assets/sitim.png'
+const Header = ({ onScrollTo }) => {
+    const is1115 = useMediaQuery({ query: '(max-width: 1115px)' })
 
-const Header = () => {
-    const isPortrait = useMediaQuery({ orientation: 'portrait' })
     return (
-        <View style={[styles.container, isPortrait ? { overflowX: 'scroll' } : null]}>
-            <Link onClick={() => window.scrollTo(0, 0)} to='/'>
-                <Image resizeMode='contain' style={styles.icon} source={Logo} />
-            </Link>
-            <View style={styles.containerMenu}>
-                <Link onClick={() => window.scrollTo(0, 0)} to='/about'>
-                    <Text style={styles.textMenu}>О пространстве</Text>
-                </Link>
-                <Link onClick={() => window.scrollTo(0, 0)} to='/network'>
-                    <Text style={styles.textMenu}>Сеть пространств</Text>
-                </Link>
-                <Link onClick={() => window.scrollTo(0, 0)} to='/open'>
-                    <Text style={styles.textMenu}>Как открыть пространство</Text>
-                </Link>
-                <Link onClick={() => window.scrollTo(0, 0)} to='/crew'>
-                    <Text style={styles.textMenu}>Команда развития сети</Text>
-                </Link>
-                <Link onClick={() => window.scrollTo(0, 0)} to='/docs'>
-                    <Text style={styles.textMenu}>Документы</Text>
-                </Link>
-                <Link onClick={() => window.scrollTo(0, document.body.scrollHeight)} to='/'  >
-                    <Text style={styles.textMenu}>Контакты</Text>
-                </Link>
-            </View>
-            <View style={styles.action}>
-                <a href='https://vk.com/prostranstvo_sitim'  >
-                    <FaVk size={30} color='#4a0a52' />
-                </a>
-                {/* <View style={styles.button}>
-                    <Text style={styles.buttonText}>Подписаться</Text>
-                </View> */}
+        <View style={styles.container}>
+            <View style={styles.limit}>
+                <Image style={styles.logo} source={logo} />
+                {
+                    !is1115 ? (
+                        <View style={styles.menuContainer}>
+                            <TouchableOpacity onPress={() => onScrollTo('network')}>
+                                <Text style={styles.menuText}>Сеть пространств</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => onScrollTo('about')}>
+                                <Text style={styles.menuText}>О пространстве</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => onScrollTo('open')}>
+                                <Text style={styles.menuText}>Как открыть пространство</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => onScrollTo('team')}>
+                                <Text style={styles.menuText}>Команда развития сети</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity accessibilityRole='link' href={documents} download={'Документы'}>
+                                <Text style={styles.menuText}>Документы</Text>
+                            </TouchableOpacity>
+                        </View>
+                    ) : null
+                }
             </View>
         </View>
     )
@@ -46,49 +38,30 @@ const Header = () => {
 
 const styles = StyleSheet.create({
     container: {
-        height: 80,
+        backgroundColor: '#1F0425',
+    },
+    logo: {
+        height: 75,
+        width: 75
+    },
+    menuContainer: {
+        flexDirection: 'row',
+    },
+    menuText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: '500',
+        marginHorizontal: 12
+    },
+    limit: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingHorizontal: 40,
-        position: 'fixed',
-        width: '100%',
-        backgroundColor: '#f5f5f5',
-        zIndex: 1,
-    },
-    icon: {
-        height: 50,
-        width: 35,
-        marginRight: 25
-    },
-    containerMenu: {
-        flexDirection: 'row'
-    },
-    textMenu: {
-        marginHorizontal: 15,
-        fontSize: 15,
-        color: '#16061c',
-        fontWeight: '600',
-    },
-    button: {
+        height: 120,
+        maxWidth: 1366,
         alignSelf: 'center',
-        height: 40,
-        borderColor: '#4a0a52',
-        borderWidth: 2,
-        justifyContent: 'center',
-        alignItems: 'center',
-        paddingHorizontal: 25,
-        marginLeft: 40
-    },
-    buttonText: {
-        color: '#000',
-        fontWeight: '700',
-        fontSize: 14
-    },
-    action: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginLeft: 25
+        width: '100%',
+        paddingHorizontal: 24
     }
 })
 

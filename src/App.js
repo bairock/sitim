@@ -1,27 +1,52 @@
-import { Routes, Route } from 'react-router-dom'
+import React, { useRef } from 'react'
 import { View } from 'react-native'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './pages/Home'
-import Crew from './pages/Crew'
-import About from './pages/About'
-import Open from './pages/Open'
-import Network from './pages/Network'
-import Docs from './pages/Docs'
+import Main from './components/Main'
+import Network from './components/Network'
+import About from './components/About'
+import Open from './components/Open'
+import Team from './components/Team'
 
-function App() {
+const App = () => {
+  const main = useRef(null)
+  const network = useRef(null)
+  const about = useRef(null)
+  const open = useRef(null)
+  const team = useRef(null)
+
+  const onScrollTo = (name) => {
+    switch (name) {
+      case 'main':
+        main.current.scrollIntoView({ behavior: 'smooth' })
+        return
+      case 'network':
+        network.current.scrollIntoView({ behavior: 'smooth' })
+        return
+      case 'about':
+        about.current.scrollIntoView({ behavior: 'smooth' })
+        return
+      case 'open':
+        open.current.scrollIntoView({ behavior: 'smooth' })
+        return
+      case 'team':
+        team.current.scrollIntoView({ behavior: 'smooth' })
+        return
+      default:
+        return
+    }
+  }
+
+
   return (
     <View>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='crew' element={<Crew />} />
-        <Route path='open' element={<Open />} />
-        <Route path='network' element={<Network />} />
-        <Route path='docs' element={<Docs />} />
-      </Routes>
-      <Footer />
+      <Header onScrollTo={onScrollTo} />
+      <Main main={main} />
+      <Network network={network} />
+      <About about={about} />
+      <Open open={open} />
+      <Team team={team} />
+      <Footer onScrollTo={onScrollTo} />
     </View>
   )
 }
