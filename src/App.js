@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { View } from 'react-native'
 import Header from './components/Header'
 import Footer from './components/Footer'

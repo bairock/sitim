@@ -12,7 +12,7 @@ const Main = ({ main }) => {
                 <Image source={imageMain} style={[styles.imageMain, is1150 ? { display: 'none' } : null]} />
                 <View style={[{ alignItems: 'center' }]}>
                     <Image source={sitimMain} style={[styles.sitimMain, is1150 ? { width: '80vw', height: 300 } : null]} />
-                    <TouchableOpacity style={[styles.openSpace, is1150 ? { width: '100%' } : null]}>
+                    <TouchableOpacity accessibilityRole='link' href='https://wa.me/79854353593' target='_blank' style={[styles.openSpace, is1150 ? { width: '100%' } : null]}>
                         <Text style={[styles.openSpaceText, is1150 ? { fontSize: 27 } : null]}>Открыть пространство</Text>
                     </TouchableOpacity>
                 </View>
