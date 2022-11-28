@@ -16,7 +16,6 @@ const GET_PEOPLE = gql`
     }  
 `
 
-
 const Team = ({ team }) => {
     const { loading, error, data } = useQuery(GET_PEOPLE)
     const is965 = useMediaQuery({ query: '(max-width: 965px)' })
