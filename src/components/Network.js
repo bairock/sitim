@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
 import { useQuery, gql } from '@apollo/client'
