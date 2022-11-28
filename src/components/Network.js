@@ -1,16 +1,28 @@
 import React, { useState } from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
+import { useQuery, gql } from '@apollo/client'
+
+const GET_SPACES = gql`
+    {
+        spaces {
+            id
+            name
+            image {
+                url
+            }
+        }
+    }
+`
 
 const Network = ({ network }) => {
+    const { loading, error, data } = useQuery(GET_SPACES)
     const is929 = useMediaQuery({ query: '(max-width: 929px)' })
 
-    const [items, setItems] = useState([
-        { title: 'тит-эбэ', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'тит-эбэ', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'тит-эбэ', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'тит-эбэ', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-    ])
+    if (loading) return null
+    if (error) return null
+
+    const { spaces } = data
 
     return (
         <View ref={network} style={styles.container}>
@@ -20,10 +32,10 @@ const Network = ({ network }) => {
                 </View>
                 <View style={[styles.itemsContainer, is929 ? { justifyContent: 'space-evenly' } : null]}>
                     {
-                        items.map((object, index) => (
-                            <View key={index} style={styles.itemContainer}>
-                                <Image source={{ uri: object.image }} style={styles.itemImage} />
-                                <Text style={styles.itemTitle}>{object.title}</Text>
+                        spaces.map((object) => (
+                            <View key={object.id} style={styles.itemContainer}>
+                                <Image source={{ uri: object.image.url }} style={styles.itemImage} />
+                                <Text style={styles.itemTitle}>{object.name}</Text>
                             </View>
                         ))
                     }

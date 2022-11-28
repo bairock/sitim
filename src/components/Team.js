@@ -1,16 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 import { useMediaQuery } from 'react-responsive'
+import { useQuery, gql } from '@apollo/client'
+
+const GET_PEOPLE = gql`
+    {
+        people {
+            id
+            name
+            description
+            image {
+                url
+            }
+        }
+    }  
+`
+
 
 const Team = ({ team }) => {
+    const { loading, error, data } = useQuery(GET_PEOPLE)
     const is965 = useMediaQuery({ query: '(max-width: 965px)' })
 
-    const [items, setItems] = useState([
-        { title: 'Степанов Иван', text: 'Директор АНО “Индустрия Будущего”', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'Степанов Иван', text: 'Директор АНО “Индустрия Будущего”', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'Степанов Иван', text: 'Директор АНО “Индустрия Будущего”', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-        { title: 'Степанов Иван', text: 'Директор АНО “Индустрия Будущего”', image: 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_412,ar_1:1/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F201231114619-01-oz-ourdomain-student-housing.jpg' },
-    ])
+    if (loading) return null
+    if (error) return null
+
+    const { people } = data
 
     return (
         <View ref={team} style={styles.container}>
@@ -23,11 +37,11 @@ const Team = ({ team }) => {
                 </View>
                 <View style={[styles.itemsContainer, is965 ? { justifyContent: 'space-evenly' } : null]}>
                     {
-                        items.map((object, index) => (
-                            <View key={index} style={styles.itemContainer}>
-                                <Image source={{ uri: object.image }} style={styles.itemImage} />
-                                <Text style={styles.itemTitle}>{object.title}</Text>
-                                <Text style={styles.itemText}>{object.text}</Text>
+                        people.map((object) => (
+                            <View key={object.id} style={styles.itemContainer}>
+                                <Image source={{ uri: object.image.url }} style={styles.itemImage} />
+                                <Text style={styles.itemTitle}>{object.name}</Text>
+                                <Text style={styles.itemText}>{object.description}</Text>
                             </View>
                         ))
                     }

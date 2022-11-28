@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import { View } from 'react-native'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,6 +8,11 @@ import Network from './components/Network'
 import About from './components/About'
 import Open from './components/Open'
 import Team from './components/Team'
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+})
 
 const App = () => {
   const main = useRef(null)
@@ -38,15 +44,17 @@ const App = () => {
   }
 
   return (
-    <View>
-      <Header onScrollTo={onScrollTo} />
-      <Main main={main} />
-      <Network network={network} />
-      <About about={about} />
-      <Open open={open} />
-      <Team team={team} />
-      <Footer onScrollTo={onScrollTo} />
-    </View>
+    <ApolloProvider client={client}>
+      <View>
+        <Header onScrollTo={onScrollTo} />
+        <Main main={main} />
+        <Network network={network} />
+        <About about={about} />
+        <Open open={open} />
+        <Team team={team} />
+        <Footer onScrollTo={onScrollTo} />
+      </View>
+    </ApolloProvider>
   )
 }
 
