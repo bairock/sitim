@@ -47,10 +47,6 @@
     "/graphql": {
       "target": "https://admin.sitim.site",
       "changeOrigin": true
-    },
-    "/": {
-      "target": "https://sitim.site",
-      "changeOrigin": true
     }
   }
 }
