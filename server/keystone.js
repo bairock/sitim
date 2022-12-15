@@ -20,8 +20,7 @@ const session = statelessSessions({
 export default withAuth(
   config({
     server: {
-      port: 4000,
-      cors: { origin: ['https://sitim.site', 'https://admin.sitim.site'], credentials: true },
+      port: 4000
     },
     graphql: {
       path: '/graphql'

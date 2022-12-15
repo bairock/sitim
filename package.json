@@ -43,5 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://admin.sitim.site"
+  "proxy": {
+    "/graphql": "https://admin.sitim.site"
+  }
 }
