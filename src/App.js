@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 import { View } from 'react-native'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -11,7 +11,7 @@ import Team from './components/Team'
 
 const client = new ApolloClient({
   uri: 'https://admin.sitim.site/graphql',
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache()
 })
 
 const App = () => {
