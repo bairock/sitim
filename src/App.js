@@ -10,7 +10,7 @@ import Open from './components/Open'
 import Team from './components/Team'
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: 'graphql',
   cache: new InMemoryCache(),
 })
 
