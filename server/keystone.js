@@ -35,7 +35,7 @@ export default withAuth(
       local: {
         kind: 'local',
         type: 'image',
-        generateUrl: path => `http://80.78.253.115/images${path}`,
+        generateUrl: path => `https://admin.sitim.site/images${path}`,
         serverRoute: {
           path: '/images',
         },
