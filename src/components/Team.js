@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     itemsContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'space-evenly',
         marginBottom: 120
     },
     itemContainer: {
