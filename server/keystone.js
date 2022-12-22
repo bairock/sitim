@@ -21,7 +21,7 @@ export default withAuth(
   config({
     server: {
       port: 4000,
-      cors: { origin: ['https://sitim.site', 'https://admin.sitim.site'], credentials: true },
+      cors: { origin: ['https://sitim.site', 'https://admin.sitim.site', 'http://localhost:3000'], credentials: true },
     },
     graphql: {
       path: '/graphql'
