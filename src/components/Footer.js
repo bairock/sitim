@@ -26,7 +26,7 @@ const Footer = ({ onScrollTo }) => {
                         <Text style={[styles.menuText, is728 ? { width: 320 } : null]}>Республика Саха (Якутия), город Якутск, проспект Ленина 1, этаж 2</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Text style={styles.menuText}>7 (924) 560 29 78</Text>
+                        <Text style={styles.menuText}>7 (924) 766 67 67</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
                         <Text style={styles.menuText}>anofutureindustry@gmail.com</Text>
