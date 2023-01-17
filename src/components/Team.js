@@ -90,11 +90,11 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
         marginBottom: 120,
-        maxWidth: 1200
     },
     itemContainer: {
         marginBottom: 60,
-        alignItems: 'center'
+        alignItems: 'center',
+        width: '33%'
     },
     itemImage: {
         width: 294,
