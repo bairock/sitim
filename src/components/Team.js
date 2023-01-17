@@ -89,7 +89,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
-        marginBottom: 120
+        marginBottom: 120,
+        maxWidth: 1200
     },
     itemContainer: {
         marginBottom: 60,
