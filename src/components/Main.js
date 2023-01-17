@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         marginVertical: 24
     },
     sitimMain: {
-        width: 600,
+        width: 550,
         height: 400,
         resizeMode: 'contain',
     },
