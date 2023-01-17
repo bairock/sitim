@@ -30,7 +30,7 @@ const Header = ({ onScrollTo }) => {
                                 <Text style={styles.menuText}>Как открыть пространство</Text>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => onScrollTo('team')}>
-                                <Text style={styles.menuText}>Команда развития сети</Text>
+                                <Text style={styles.menuText}>Команда проекта</Text>
                             </TouchableOpacity>
                             <TouchableOpacity accessibilityRole='link' href={documents} download={'Документы'}>
                                 <Text style={styles.menuText}>Документы</Text>
