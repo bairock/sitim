@@ -29,10 +29,10 @@ const Team = ({ team }) => {
         <View ref={team} style={styles.container}>
             <View style={styles.limit}>
                 <View style={styles.titleContainer}>
-                    <Text style={styles.title}>Команда развития сети</Text>
+                    <Text style={styles.title}>Команда проекта</Text>
                 </View>
                 <View style={styles.subtitleContainer}>
-                    <Text style={styles.subtitle}>Проект “Сеть пространств развития “Ситим” в муниципальных образованиях Республики Саха (Якутия)” разработан и реализуется командой Автономной некоммерческой организацией по развитию стратегических инициатив “Индустрия будущего” при участии заинтересованных организаций.</Text>
+                    <Text style={styles.subtitle}>Проект “Сеть пространств развития “Ситим” в муниципальных образованиях Республики Саха (Якутия)” разработан и реализуется командой Автономной некоммерческой организацией по поддержке стратегических инициатив “Индустрия будущего” при участии заинтересованных организаций.</Text>
                 </View>
                 <View style={[styles.itemsContainer, is965 ? { justifyContent: 'space-evenly' } : null]}>
                     {

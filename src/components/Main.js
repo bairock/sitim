@@ -61,8 +61,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 60,
         borderWidth: 1,
-        borderColor: 'rgba(31, 4, 37, 0.08)',
-        boxShadow: '0px 42px 24px rgba(255, 147, 42, 0.24), 0px 24px 24px rgba(255, 147, 42, 0.8), 0px 18px 12px rgba(255, 147, 42, 0.8)'
+        borderColor: 'rgba(31, 4, 37, 0.04)',
     },
     openSpaceText: {
         color: '#fff',
