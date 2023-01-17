@@ -37,7 +37,7 @@ const Team = ({ team }) => {
                 <View style={[styles.itemsContainer, is965 ? { justifyContent: 'space-evenly' } : null]}>
                     {
                         people.map((object) => (
-                            <View key={object.id} style={styles.itemContainer}>
+                            <View key={object.id} style={[styles.itemContainer, !is965 ? { width: '33%' } : null]}>
                                 <Image source={{ uri: object.image.url }} style={styles.itemImage} />
                                 <Text style={styles.itemTitle}>{object.name}</Text>
                                 <Text style={styles.itemText}>{object.description}</Text>
@@ -94,7 +94,6 @@ const styles = StyleSheet.create({
     itemContainer: {
         marginBottom: 60,
         alignItems: 'center',
-        width: '33%'
     },
     itemImage: {
         width: 294,
