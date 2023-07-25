@@ -15,6 +15,7 @@ const { withAuth } = createAuth({
 
 const session = statelessSessions({
   secret: '1c1211e729984bcaa4b8d12f07b4195d',
+  secure: false,
 })
 
 export default withAuth(
@@ -36,7 +37,7 @@ export default withAuth(
       local: {
         kind: 'local',
         type: 'image',
-        generateUrl: path => `http://localhost:4000/images${path}`,
+        generateUrl: path => `http://194.58.92.218:4000/images${path}`,
         serverRoute: {
           path: '/images',
         },

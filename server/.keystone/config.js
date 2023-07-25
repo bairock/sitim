@@ -73,7 +73,8 @@ var { withAuth } = (0, import_auth.createAuth)({
   }
 });
 var session = (0, import_session.statelessSessions)({
-  secret: "1c1211e729984bcaa4b8d12f07b4195d"
+  secret: "1c1211e729984bcaa4b8d12f07b4195d",
+  secure: false
 });
 var keystone_default = withAuth(
   (0, import_core2.config)({
@@ -94,7 +95,7 @@ var keystone_default = withAuth(
       local: {
         kind: "local",
         type: "image",
-        generateUrl: (path) => `http://localhost:4000/images${path}`,
+        generateUrl: (path) => `http://194.58.92.218:4000/images${path}`,
         serverRoute: {
           path: "/images"
         },
