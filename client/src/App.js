@@ -10,7 +10,7 @@ import Open from './components/Open'
 import Team from './components/Team'
 
 const client = new ApolloClient({
-  uri: 'https://admin.sitim.site/graphql',
+  uri: 'http://localhost:4000/graphql',
   cache: new InMemoryCache()
 })
 

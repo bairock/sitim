@@ -16,7 +16,7 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// keystone.js
+// keystone.ts
 var keystone_exports = {};
 __export(keystone_exports, {
   default: () => keystone_default
@@ -26,7 +26,7 @@ var import_core2 = require("@keystone-6/core");
 var import_auth = require("@keystone-6/auth");
 var import_session = require("@keystone-6/core/session");
 
-// schema.js
+// schema.ts
 var import_core = require("@keystone-6/core");
 var import_access = require("@keystone-6/core/access");
 var import_fields = require("@keystone-6/core/fields");
@@ -62,7 +62,7 @@ var lists = {
   })
 };
 
-// keystone.js
+// keystone.ts
 var { withAuth } = (0, import_auth.createAuth)({
   listKey: "User",
   identityField: "email",
@@ -78,7 +78,8 @@ var session = (0, import_session.statelessSessions)({
 var keystone_default = withAuth(
   (0, import_core2.config)({
     server: {
-      port: 4e3
+      port: 4e3,
+      cors: { origin: ["https://sitim.site", "https://admin.sitim.site", "http://localhost:3000"], credentials: true }
     },
     graphql: {
       path: "/graphql"
@@ -102,5 +103,3 @@ var keystone_default = withAuth(
     }
   })
 );
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {});
