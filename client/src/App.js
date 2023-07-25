@@ -10,7 +10,7 @@ import Open from './components/Open'
 import Team from './components/Team'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'http://194.58.92.218:4000/graphql',
   cache: new InMemoryCache()
 })
 
